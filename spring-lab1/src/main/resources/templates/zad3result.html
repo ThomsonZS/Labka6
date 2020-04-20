@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Pierwszy projekt springowy</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <p>
+            <span th:text="${calcForm.getX()}">x</span> <span th:text="${calcForm.getAction()}">x</span> <span th:text="${calcForm.getY()}">y</span> = <span th:text="${calcForm.getResult()}">result</span>
+        </p>
+    </body>
+</html>
+

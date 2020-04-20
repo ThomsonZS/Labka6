@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Pierwszy projekt springowy</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1>Przedstaw się ładnie:</h1>
+        ======= zad 1=======<br/>
+        <form action="/zad1result" method="post">
+            x: <input type="number" name="x" />
+            y: <input type="number" name="y" />
+            <input type="submit" value="dodaj" />            
+        </form>
+        <br /><br />
+        ======= zad 2=======<br/>
+        <form action="/zad2result" method="post">
+            x: <input type="number" name="x" />
+            y: <input type="number" name="y" />
+            <select id="action" name ="action">
+                <option value="dodawanie">dodawanie</option>
+                <option value="odejmowanie">odejmowanie</option>
+                <option value="mnozenie">mnozenie</option>
+            </select>
+            <input type="submit" value="wykonaj" />            
+        </form>
+        <br /><br />
+        ======= zad 3=======<br/>
+        <form action="/zad3result" method="post">
+            x: <input type="number" name="x" />
+            y: <input type="number" name="y" />
+            <select id="action" name ="action">
+                <option value="+">dodawanie</option>
+                <option value="-">odejmowanie</option>
+                <option value="*">mnozenie</option>
+            </select>
+            <input type="submit" value="wykonaj" />            
+        </form>
+        <br /><br />
+        <form action="/hello" method="post">
+            Imię: <input type="text" name="imie" />
+            Wiek: <input type="number" name="wiek" />
+            <input type="submit" value="Wyślij" />            
+        </form>
+    </body>
+</html>
